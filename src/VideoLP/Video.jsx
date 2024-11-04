@@ -2,7 +2,7 @@ import React from 'react';
 import './Video.css';
 function Video(){
     return(
-        <div className="video-container">
+        <div className="video-container container">
             <iframe 
             className="reponsive-iframe"
             width="100%" 
