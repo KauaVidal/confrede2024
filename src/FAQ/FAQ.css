@@ -1,0 +1,28 @@
+/* FAQ.css */
+.faq-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.faq-list {
+    margin-top: 20px;
+}
+
+.faq-item {
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9em;
+}

@@ -18,8 +18,10 @@
     padding: 20px;
     width: min(90%, 600px);
     height: fit-content;
+    max-height: 90vh;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
 }
 
 .popup-content iframe {

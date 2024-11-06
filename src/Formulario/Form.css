@@ -10,6 +10,9 @@ a {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, #fe7153 0px -3px 0px inset;
+    margin-bottom: 2rem;
+    /* position: sticky; */
+    top: 30px;
 }
 
 .event-infos {
@@ -23,19 +26,21 @@ a {
 .icon-div {
     display: flex;
     align-items: center;
-    flex: 1;
-}
-
-.icon-div:nth-child(1) {
-    justify-content: flex-start;
-}
-
-.icon-div:nth-child(2) {
     justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    font-size: 12px;
+    text-align: center;
 }
 
+.icon-div:nth-child(1),
+.icon-div:nth-child(2),
 .icon-div:nth-child(3) {
-    justify-content: flex-end;
+    border-right: 1px solid #e2e2e2;
+}
+
+.icon-div p {
+    max-width: 90%;
 }
 
 .sign-up-btn {
@@ -51,5 +56,22 @@ a {
 }
 
 .icon-form {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .event-infos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+        row-gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .event-infos .icon-div:nth-child(2) {
+        border: none;
+    }
 }

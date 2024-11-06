@@ -1,0 +1,108 @@
+.songs-wrapper {
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.songs-wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 50px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 3rem 3rem 0;
+}
+
+.songs-wrapper .box-text {
+    width: 60%;
+    padding: 0;
+}
+
+.songs-wrapper .box-text h2 {
+    font-family: 'Khand', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 1.5rem;
+}
+
+.songs-wrapper .box-text p {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    color: #999;
+}
+
+.songs-wrapper .song-streamings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.songs-wrapper .song-streamings > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    min-width: 230px;
+}
+
+.songs-wrapper .song-streamings > div > div p:first-child {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.songs-wrapper .song-streamings > div > div p:last-child {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.songs-wrapper .song-streamings > div.spotify > div p:last-child {
+    color: #1ED760;
+}
+
+.songs-wrapper .song-streamings > div.youtube > div p:last-child {
+    color: #FF0000;
+}
+
+.songs-wrapper .box-image {
+    width: 40%;
+    text-align: center;
+}
+
+.songs-wrapper > img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.songs-wrapper > img.left-detail {
+    left: 0;
+}
+
+.songs-wrapper > img.right-detail {
+    right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .songs-wrapper .box-text,
+    .songs-wrapper .song-streamings > div {
+        width: 100%;
+    }
+
+    .songs-wrapper .song-streamings > div {
+        justify-content: center;
+    }
+
+    .songs-wrapper .box-image,
+    .songs-wrapper > img {
+        display: none;
+    }
+
+    .songs-wrapper .box-text > h2,
+    .songs-wrapper .box-text > p {
+        text-align: center;
+    }
+}

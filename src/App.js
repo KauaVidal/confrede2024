@@ -4,6 +4,8 @@ import Form from './Formulario/Form';
 import Video from './VideoLP/Video';
 import Cards from './Cards/Cards';
 import Carrossel from './Carrosel/Carrossel';
+import Songs from './Songs/Songs';
+import FAQ from './FAQ/FAQ';
 
 function App () {
   return (
@@ -15,6 +17,8 @@ function App () {
       <Video />
       <Cards />
       <Carrossel />
+      <Songs />
+      <FAQ />
     </div>
   );
 }
