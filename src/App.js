@@ -6,6 +6,7 @@ import Cards from './Cards/Cards';
 import Carrossel from './Carrosel/Carrossel';
 import Songs from './Songs/Songs';
 import FAQ from './FAQ/FAQ';
+import Footer from './Footer/Footer';
 
 function App () {
   return (
@@ -19,6 +20,7 @@ function App () {
       <Carrossel />
       <Songs />
       <FAQ />
+      <Footer />
     </div>
   );
 }
