@@ -1,11 +1,11 @@
-.container-geral{
+.container-geral {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.box-carrossel{
+.box-carrossel {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
@@ -14,7 +14,7 @@
     height: 30rem;
 }
 
-.container-geral h1{
+.container-geral h1 {
     font-family: "Khand", sans-serif;
     font-weight: 200;
     font-size: 2.5rem;
@@ -22,15 +22,13 @@
     margin-top: 1rem;
 }
 
-.container-geral p{
+.container-geral p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1rem;
-
-
 }
 
-.box-decoration{
+.box-decoration {
     margin-top: 1.5rem;
     width: 80%;
     height: 2rem;
@@ -38,13 +36,12 @@
     display: flex;
     justify-content: end;
     align-items: center;
-
 }
 
-.swiper{
+.swiper {
     width: 100%;
-    height: 100%; 
-    
+    height: 100%;
+
     /* display: flex !important;
     justify-content: center !important;
     align-items: center !important; */
@@ -56,40 +53,30 @@
     overflow: hidden !important;
 }
 
-.slide{
+.slide {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-
-
 }
 
-.slide-item{
+.slide-item {
     width: 19rem;
     height: 24rem;
     object-fit: cover;
 
     border-radius: 15px !important;
 
-
     /* border: yellow 1px solid; */
-
-    
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: black !important; /* Cor das setas */
+    color: black !important;
     background-color: rgba(0, 0, 0, 0.305);
     width: 1rem !important;
     height: 1rem !important;
-
-    border-radius: 10px;
-
-    /* border: red 1px solid; */
-
-    padding: 0.5rem;
-
+    border-radius: 8px;
+    padding: 20px;
     font-size: 10px !important;
 }
 
@@ -98,5 +85,6 @@
     font-size: 1rem !important;
 }
 
-
-
+.guests-carousel {
+    margin-bottom: 5rem;
+}

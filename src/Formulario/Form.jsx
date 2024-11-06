@@ -1,42 +1,70 @@
-import React from 'react';
-import './Form.css';
-import calendario from '../IMG/calendario.png';
-import usuario from '../IMG/usuario.png';
-import local from '../IMG/local.png';
+import React, { useState } from "react";
+import GoogleFormsPopUp from "../GoogleFormsPopUp/GoogleFormsPopUp";
+import "./Form.css";
+import calendarIcon from "../IMG/calendar-icon.svg";
+import userIcon from "../IMG/user-icon.svg";
+import locationIcon from "../IMG/map-pin-icon.svg";
+import dollarSignIcon from "../IMG/circle-dollar-sign.svg";
 
-function Form() {
+const Form = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+    setIsActive(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+    setIsActive(false);
+  };
+
   return (
-    <div className='container'>
-    <div className='box-form'>
+      <div className='box-form container'>
+          <div className="event-infos">
+            <div className="icon-div">
+                <img
+                    className="icon-form"
+                    src={calendarIcon}
+                    alt="Icone de localização"
+                />
+                <p>6 e 7 DE DEZEMBRO</p>
+            </div>
 
-    <div className='icon-div'>
-        <img className='icon-form' src={calendario} alt="Icone de localização" />
-            07 de dezembro
-    </div>
+            <div className="icon-div">
+                <img
+                    className="icon-form"
+                    src={locationIcon}
+                    alt="Icone de localização"
+                />
+                <p><a href="https://g.co/kgs/eAuiCdo">PIBVM</a></p>
+            </div>
 
-    <div className='icon-div'>
-        <img className='icon-form' src={local} alt="Icone de localização" />
-            <a href="https://g.co/kgs/eAuiCdo">PIBVM</a>
-    </div>
+            <div className="icon-div">
+                <img
+                    className="icon-form"
+                    src={userIcon}
+                    alt="Icone de localização"
+                />
+                <p>+X CONVIDADOS</p>
+            </div>
 
-    <div className='icon-div'>
-        <img className='icon-form' src={usuario} alt="Icone de localização" />
-            +20 convidados
-    </div>
+            <div className="icon-div">
+                <img
+                    className="icon-form"
+                    src={dollarSignIcon}
+                    alt="Icone de dinheiro"
+                />
+                <p>GRATUITO</p>
+            </div>
+          </div>
 
+          <button onClick={handleOpenPopup} className="sign-up-btn">Inscreva-se</button>
 
-
-    <form className="form">
-
-
-      <label>
-        <input placeholder='Seu e-mail' type="email" name="email" />
-      </label>
-      <button type="submit">Enviar</button>
-    </form>
-    </div>
-    </div>
+          <GoogleFormsPopUp isOpen={isPopupOpen} onClose={handleClosePopup} className={isPopupOpen ? 'active' : ''} />
+      </div>
   );
-}
+};
 
 export default Form;
