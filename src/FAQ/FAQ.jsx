@@ -4,20 +4,20 @@ import './FAQ.css';
 function FAQ() {
     const faqs = [
         { 
-            question: "Pergunta 1",
-            answer: "Resposta 1"
+            question: "Qual é o tema da Conferência REDE 2024?",
+            answer: "O tema é Time Out, que significa descanso ou repouso. Vamos explorar o verdadeiro descanso que só encontramos em Cristo, em contraste com o foco que tivemos ao longo do ano em produtividade, graça e trabalho."
         },
         { 
-            question: "Pergunta 2",
-            answer: "Resposta 2"
+            question: "Quando e onde vai acontecer a Conferência?",
+            answer: "A data e o local exato podem ser confirmados na nossa programação oficial, disponível nas redes sociais da REDE ou diretamente na PIBVM. A conferência será realizada na igreja. Consulte o endereço clicando icon de localização no inicio da página."
         },
         { 
-            question: "Pergunta 3",
-            answer: "Resposta 3"
+            question: "A Conferência REDE é aberta para convidados de outras igrejas?",
+            answer: " Sim, todos são bem-vindos, especialmente jovens que têm interesse em aprender mais sobre Jesus e experimentar o amor dele."
         },
         { 
-            question: "Pergunta 4",
-            answer: "Resposta 4"
+            question: "Como posso me inscrever?",
+            answer: "A inscrição é realizada no botão Inscreva-se, disponível no inicio da página. Basta preencher o formulário com seus dados e aguardar a confirmação da inscrição."
         }
     ];
 

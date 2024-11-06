@@ -11,23 +11,31 @@ function Songs() {
         <div className='songs-wrapper'>
             <div className="container">
                 <div className='box-text'>
-                    <h2>Ouça as músicas da CONFERÊNCIA REDE TIMEOUT 2024 no Spotify ou YouTube Music</h2>
+                    <h2>Ouça as músicas da CONFERÊNCIA REDE TIMEOUT 2024 no Spotify</h2>
                     <p>Prepare os seus ouvidos para louvar ao Senhor como nunca antes</p>
                     <div className="song-streamings">
-                        <div className="spotify">
+                        <div className="spotify" onClick={()=> window.location.href = 'https://open.spotify.com/intl-pt/artist/2glJ3LARmTlvWe3aTLms33?si=RGIaVNPbQWuAhhDnohQ6Jg'}>
                             <img src={spotifyImg} alt="Spotify logo"/>
                             <div>
-                                <p>Ouça no</p>
+                                <p>Ouça <b>BANDA ECOS</b> no</p>
+                                <p>Spotify</p>
+                            </div>
+                        </div>  
+                        <div className="spotify" onClick={()=> window.location.href = 'https://open.spotify.com/playlist/37i9dQZF1DZ06evO3Mha7e?si=2871edd4f11644d9'}>
+                            <img src={spotifyImg} alt="Spotify logo"/>
+                            <div>
+                                <p>Ouça <b>TEMPLO SOUL</b> no</p>
                                 <p>Spotify</p>
                             </div>
                         </div>
+                        {/* NÃO SERÁ USADO POR ENQUANTO
                         <div className="youtube">
                             <img src={youtubeMusicImg} alt="YouTube Music logo"/>
                             <div>
                                 <p>Ouça no</p>
                                 <p>YouTube Music</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className='box-image'>

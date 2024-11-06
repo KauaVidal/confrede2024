@@ -1,0 +1,20 @@
+.footer-img {
+    width: 100%;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .footer-img.mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-img.mobile {
+      display: none;
+    }
+    .footer-img.web {
+      display: block;
+    }
+  }

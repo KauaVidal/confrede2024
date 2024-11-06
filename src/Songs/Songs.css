@@ -61,6 +61,7 @@
 
 .songs-wrapper .song-streamings > div.spotify > div p:last-child {
     color: #1ED760;
+    cursor: pointer;
 }
 
 .songs-wrapper .song-streamings > div.youtube > div p:last-child {
