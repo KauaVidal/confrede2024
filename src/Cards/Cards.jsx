@@ -1,13 +1,15 @@
 import React from 'react';
 import './Cards.css';
-import img from '../IMG/image.png';
+import redeImg from '../IMG/rede-pessoas.jpeg';
+import confRedeImg from '../IMG/confrede.jpeg';
+import confredeTimoutImg from '../IMG/confrede-timeout.jpeg';
 
 function Cards() {
     return (
         <div className='background'>
             <div className='card container'>
                 <div className='box-image'>
-                    <img src={img} alt="imagem rede"/>
+                    <img src={redeImg} alt="imagem rede"/>
                 </div>
                 <div className='box-text'>
                     <h2>O QUE É A <b>REDE</b>?</h2>
@@ -20,7 +22,7 @@ function Cards() {
 
             <div className='card container'>
                 <div className='box-image'>
-                    <img src={img} alt="imagem rede" />
+                    <img src={confRedeImg} alt="imagem rede" />
                 </div>
                 <div className='box-text'>
                     <h2>O QUE É A <b>CONFERÊNCIA</b>?</h2>
@@ -30,7 +32,7 @@ function Cards() {
 
             <div className='card container'>
                 <div className='box-image'>
-                    <img src={img} alt="imagem rede" />
+                    <img src={confredeTimoutImg} alt="imagem rede" />
                 </div>
                 <div className='box-text'>
                     <h2>CONFERÊNCIA <b>REDE TIMEOUT</b></h2>

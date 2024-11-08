@@ -49,7 +49,7 @@ const Form = () => {
                         src={userIcon}
                         alt="Icone de localização"
                     />
-                    <p>+X CONVIDADOS</p>
+                    <p>5 CONVIDADOS</p>
                 </div>
 
                 <div className="icon-div">
