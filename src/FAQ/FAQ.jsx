@@ -31,7 +31,7 @@ function FAQ() {
 
     return (
         <div className="faq-container container">
-            <h2>Perguntas Frequentes</h2>
+            <h2>PERGUNTAS FREQUENTES</h2>
             <div className="faq-list">
                 {faqs.map((faq, index) => (
                     <div key={index} className="faq-item">

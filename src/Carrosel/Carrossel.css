@@ -14,9 +14,9 @@
     height: 30rem;
 }
 
-.container-geral h1 {
+.container-geral h2 {
     font-family: "Khand", sans-serif;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 2.5rem;
 
     margin-top: 1rem;
@@ -24,8 +24,7 @@
 
 .container-geral p {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 300;
 }
 
 .box-decoration {

@@ -30,7 +30,7 @@ function Carrossel() {
             <div className='box-decoration'>
                 <img src={decoracao} alt="" />
             </div>
-            <h2>Nossos convidados</h2>
+            <h2>NOSSOS CONVIDADOS</h2>
 
             <p>Saiba quem estará conosco nesse dia especial !</p>
 
