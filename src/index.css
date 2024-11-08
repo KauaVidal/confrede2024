@@ -6,7 +6,13 @@
 }
 
 body {
-  background-color: #F9F9F9;
+  /* background-color: #F9F9F9; */
+  background-image: url("./IMG/bg-detalhes.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -20,4 +26,10 @@ p {
 .container {
   width: min(90%, 1000px);
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-position: left;
+  }
 }

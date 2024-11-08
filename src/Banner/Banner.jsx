@@ -1,7 +1,7 @@
 import React from 'react';
 import './Banner.css';
-import bannerDesktop from '../IMG/banner-desktop.png';
-import bannerMobile from '../IMG/banner-mobile.png';
+import bannerDesktop from '../IMG/banner-rede-desktop.jpg';
+import bannerMobile from '../IMG/banner-rede-mobile.jpg';
 
 const Banner = () => (
     <div className='banner'>

@@ -13,7 +13,9 @@
 
     border-radius: 16px;
     padding: 20px;
-    box-shadow: #fe7153 0px -4px 0px inset;
+    border-left: 3px solid #fe7153;
+    border-right: 3px solid #fe7153;
+    
     background-color: rgba(30, 30, 30, 0.48);
 
     color: #fff;
@@ -78,14 +80,27 @@
     width: 50%;
 }
 
+.box-image img {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box-image img:hover {
+    transform: scale(1.05);
+}
+
 @media only screen and (max-width: 999px) {
     .card {
         flex-direction: column !important;
     }
 
-    .card h1,
+    .card h2,
     .card p {
         text-align: center !important;
+    }
+
+    .card h2 {
+        margin-top: 15px;
     }
 
     .card .box-text {

@@ -2,19 +2,34 @@
     width: 100%;
     display: none;
     overflow: hidden;
-  }
-  
-  .footer-img.mobile {
+}
+
+.footer-img.mobile {
     width: 100%;
     height: auto;
     display: block;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+#bottom-sign-up-btn {
+    position: fixed;
+    bottom: 30px;
+    display: none;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 50px;
+    border-left: 3px solid #222;
+    border-right: 3px solid #222;
+}
+
+@media (min-width: 768px) {
     .footer-img.mobile {
-      display: none;
+        display: none;
     }
     .footer-img.web {
-      display: block;
+        display: block;
     }
-  }
+}
