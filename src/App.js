@@ -1,27 +1,17 @@
 import React from 'react';
-import Banner from './Banner/Banner';
-import Form from './Formulario/Form';
-import Video from './VideoLP/Video';
-import Cards from './Cards/Cards';
-import Carrossel from './Carrosel/Carrossel';
-import Songs from './Songs/Songs';
-import FAQ from './FAQ/FAQ';
-import Footer from './Footer/Footer';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Home from './Home';
 
 function App () {
   return (
+    <Router>
     <div className="App">
-      {/* <h1>Conferencia 2024</h1> */}
-      {/* <div className='banner'></div> */}
-      <Banner />
-      <Form />
-      <Video />
-      <Cards />
-      <Carrossel />
-      <Songs />
-      <FAQ />
-      <Footer />
+      <Routes>
+        <Route path='/home' element={<Home/>}/>
+        <Route from='/' element={<Navigate to="/home"/>} />
+      </Routes>
     </div>
+    </Router>
   );
 }
 
